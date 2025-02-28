@@ -9,7 +9,8 @@ import {
   GitHubIcon,
   InstagramIcon,
   LinkedInIcon,
-  XIcon,
+  FacebookIcon,
+  BuyIcon,
 } from '@/components/SocialIcons'
 import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
@@ -282,21 +283,24 @@ export default async function Home() {
             own terms.
           </p>
           <div className="mt-6 flex gap-6">
-            <SocialLink href="#" aria-label="Follow on X" icon={XIcon} />
+            <SocialLink 
+              href="https://www.facebook.com/profile.php?id=100090279185875"
+              aria-label="Follow on X"
+              icon={FacebookIcon} />
             <SocialLink
-              href="#"
+              href="https://www.instagram.com/mr.cherciu"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
             />
             <SocialLink
-              href="#"
-              aria-label="Follow on GitHub"
-              icon={GitHubIcon}
-            />
-            <SocialLink
-              href="#"
+              href="https://www.linkedin.com/in/romeo-cherciu-858591290/"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
+            />
+            <SocialLink
+              href="https://buymeacoffee.com/mr.cherciu"
+              aria-label="Buy me a Coffee"
+              icon={BuyIcon}
             />
           </div>
         </div>
