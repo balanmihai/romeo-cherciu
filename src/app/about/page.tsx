@@ -11,7 +11,7 @@ import {
   FacebookIcon,
   BuyIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/portrait.jpg'
+import portraitImage from '@/images/photos/portrait.jpeg'
 import PdfList from '@/components/Pdflist'
 
 function SocialLink({
@@ -30,9 +30,9 @@ function SocialLink({
       <Link
         href={href}
         target='_blank'
-        className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
+        className="group flex text-sm font-medium text-zinc-800 transition hover:text-orange-400 dark:text-zinc-200 dark:hover:text-orange-400"
       >
-        <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
+        <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-orange-500" />
         <span className="ml-4">{children}</span>
       </Link>
     </li>
@@ -106,7 +106,7 @@ Dacă ar fi un singur aspect al vieții tale prezente pe care l-ai putea lua cu 
         <div className="lg:pl-20">
           <ul role="list">
             <SocialLink href="https://www.facebook.com/profile.php?id=100090279185875" icon={FacebookIcon}>
-              Follow on X
+              Follow on Facebook
             </SocialLink>
             <SocialLink href="https://www.instagram.com/mr.cherciu" icon={InstagramIcon} className="mt-4">
               Follow on Instagram
@@ -124,6 +124,22 @@ Dacă ar fi un singur aspect al vieții tale prezente pe care l-ai putea lua cu 
             >
               cherciu.romeo@gmail.com
             </SocialLink>
+            <a
+      href="https://wa.me/+40727343265"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex mt-6 items-center gap-2 px-4 py-2 bg-green-500 text-white rounded-full shadow-lg hover:bg-green-600 transition"
+    >
+      <svg
+        className="w-5 h-5"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.087.535 4.064 1.553 5.821L0 24l6.492-1.525A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm-.166 3.5a8.49 8.49 0 018.49 8.49c0 4.693-3.812 8.505-8.505 8.505a8.58 8.58 0 01-4.102-1.036l-2.889.788.78-2.828A8.515 8.515 0 013.5 11.834c0-4.692 3.814-8.505 8.505-8.505zm5.256 11.688c-.219-.108-1.299-.637-1.5-.712-.201-.076-.346-.108-.49.108s-.562.713-.689.86c-.127.148-.254.166-.473.057a6.95 6.95 0 01-2.047-1.262 7.67 7.67 0 01-1.429-1.76c-.15-.256.15-.472.439-.78.112-.112.219-.257.328-.385.109-.128.146-.224.219-.37s.037-.274-.01-.385c-.047-.112-.49-1.186-.67-1.624s-.354-.384-.49-.392c-.127-.009-.274-.009-.42-.009a.809.809 0 00-.589.273c-.2.218-.771.756-.771 1.842s.79 2.145.899 2.299c.109.148 1.558 2.42 3.76 3.338.526.226.937.36 1.258.461.528.167 1.007.143 1.388.087.423-.063 1.299-.53 1.481-1.045.183-.515.183-.956.128-1.044s-.201-.146-.42-.256z" />
+      </svg>
+      Write me on WhatsApp
+    </a>
           </ul>
         </div>
       </div>
