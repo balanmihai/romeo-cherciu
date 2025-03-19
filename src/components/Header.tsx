@@ -14,7 +14,7 @@ import {
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import avatarImage from '@/images/photos/portrait.jpeg'
+import avatarImage from '@/images/photos/avatar.jpeg'
 
 
 function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
